@@ -1,0 +1,15 @@
+
+@mixin facb {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin texttruncate($number) {
+    display:-webkit-box;
+    -webkit-line-clamp:$number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}

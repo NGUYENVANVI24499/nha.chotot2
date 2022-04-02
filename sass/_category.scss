@@ -1,0 +1,104 @@
+.category{
+
+    padding-bottom :1.5rem;
+    &-container{
+        margin-top: 1rem;
+        background-color: $light_color;
+    }
+    &-header{
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+    &-list{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+       li:hover{
+        .category-dropdown{
+            display: block;
+        }
+       }
+    }
+    &-item{
+        position: relative;
+        flex: 1;
+        a{
+            width: auto;
+        }
+        a:hover{
+            background-color: #f4f4f4;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            
+        }
+    }
+
+    &-link{
+        padding: 10px;
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 10px;
+        flex: 1;
+        
+        img{
+            flex-shrink: 0;
+            width: 6rem;
+            height: 6rem;
+            object-fit: cover;
+        }
+    }
+    &-content{
+       display:flex;
+       flex-direction: column;
+       flex: 1;
+      gap: 10px 0;
+        
+    }
+    &-heading{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &-text{
+        font-size: 1.2rem;
+        color: $test_color;
+        span{
+            color: #3b3a3a;
+        }
+    }
+
+
+    &-dropdown{
+        z-index: 10;
+        display: none;
+        position:absolute;
+        background-color:$light_color;
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        a{
+            display: block;
+            line-height: calc(40/16);
+            color: $header_color;
+            font-size: 1.6rem;
+            padding-left: 1rem;
+            border-bottom: 1px solid #f4f4f4;
+        }
+     
+        
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .category-text{
+        display: none;
+    }
+    .category-link{
+        flex-direction: column;
+
+    }
+    .slider-container img {
+        height: 16rem;    
+    }
+}
