@@ -92,6 +92,7 @@ main {
   flex-shrink: 0;
   height: 16.8rem;
   max-width: 100%;
+  width: 100%;
   object-fit: cover;
   overflow: hidden;
 }
@@ -222,6 +223,11 @@ button {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
   background-color: #ffba00;
 }
 .header-container {
@@ -354,6 +360,7 @@ button {
   }
 }
 .slider {
+  margin-top: 100px;
   background-color: #ffffff;
   padding: 10px;
 }
@@ -575,7 +582,7 @@ button {
 }
 .new-container {
   background-color: #ffffff;
-  padding: 0.8rem;
+  padding: 0.4rem;
 }
 .new-lists a:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -631,6 +638,13 @@ button {
   font-size: 2.6rem;
   background-color: #9b9b9b;
   padding: 4px;
+}
+
+.lease {
+  padding-bottom: 3rem;
+}
+.lease-container {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
