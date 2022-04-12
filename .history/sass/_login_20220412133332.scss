@@ -1,0 +1,16 @@
+.login{
+    
+    margin-top: 100px;
+    background-color:#ffffff;
+   
+    
+    &-container{
+        background-image: url("/assets/image/login_background.webp");
+            background-repeat: no-repeat;
+        position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+        
+       
+    }
+}

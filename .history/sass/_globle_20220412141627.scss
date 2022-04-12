@@ -1,0 +1,76 @@
+@import "variables";
+
+.wrapper{
+    max-width: 1366px;
+    margin: 0 auto;
+    
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1;
+    font-family: $font;
+    color: $test_color;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    color:$header_color;
+    font-weight: bolder;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: $font;
+}
+
+ion-icon{
+    font-size: 2.1rem;
+}
+
+.flex{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 1rem;
+}
+.flex-between{
+    display:flex;
+    
+}
+.heading{
+    color:#222222;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing: normal;
+    line-height: 1.41;
+    padding: 12px 5px;
+    
+}
+.headingend{
+    color:#38699f;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing: normal;
+    line-height: 1.41;
+    padding: 12px 5px;
+    text-align: center;
+}
+main{
+    background-color: #f4f4f4;;
+}
+
+@media screen and (max-width: 767.98px) {
+    html{
+        font-size: 52.5%;
+    }
+}
+
+
