@@ -48,8 +48,6 @@
     height: 100%;
     object-fit: cover;
   }
-  .swiper-button-next:after,.swiper-button-prev:after {
-      font-size: 2.6rem;
-      background-color: #9b9b9b;
-      padding: 4px;
+  .swiper-button-next:after,.swiper-button-next:after{
+      font-size: 1.6rem;
   }

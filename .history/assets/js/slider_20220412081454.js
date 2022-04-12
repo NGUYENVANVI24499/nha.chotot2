@@ -35,7 +35,7 @@ $('.slider-container').slick({
 
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 15,
+    spaceBetween: 20,
     slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
