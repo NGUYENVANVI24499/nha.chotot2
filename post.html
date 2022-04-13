@@ -187,7 +187,7 @@
             <div class="postnew">
                 <div class="container">
                     <div class="postnew-container">
-                        <input type="file" id="file-upload" multiple required />
+                        <input class="postnew-select" type="file" id="file-upload" multiple required />
                         <div class="postnew1">
                             <div class="select-box">
                                 <div class="selected">
@@ -196,10 +196,35 @@
                                 <img src="./assets/image/give-away-info.svg" alt="" class="postnew-image">
                                 <h3>đăng tin cho tặng</h3>
                                 <p>Hoàn thành tin đăng cho tặng và đợi người nhận liên hệ</p>
-                                <div class="select-box">
+                                <div class="select-box2">
+                                    <div class="dark"></div>
+                                    
                                     <div class="option-container">
-                                        <div class="option">
-                                            <input type="radio" class="radio" name="" id="automobiles">
+                                        <div class="option-header">
+                                            <div class="option-close flex">
+                                                <ion-icon name="close-outline"></ion-icon>
+                                                <h3>Chọn danh mục đăng tin</h3>
+                                            </div>
+                                        </div>
+                                        <div class="option flex">
+                                            <input type="radio" class="radio" name="categary" id="bds">
+                                            <img  src="./assets/image/1000.png" alt="">
+                                            <label for="bds">Bất động sản</label>
+                                        </div>
+                                        <div class="option flex">
+                                            <input type="radio" class="radio" name="categary" id="moto">
+                                            <img  src="./assets/image/2000.png" alt="">
+                                            <label for="moto">Xe cộ</label>
+                                        </div>
+                                        <div class="option flex">
+                                            <input type="radio" class="radio" name="categary" id="TV">
+                                            <img  src="./assets/image/5000.png" alt="">
+                                            <label for="TV">Đồ điện tử</label>
+                                        </div>
+                                        <div class="option flex">
+                                            <input type="radio" class="radio" name="categary" id="job">
+                                            <img  src="./assets/image/13000.png" alt="">
+                                            <label for="job">Việc làm</label>
                                         </div>
                                     </div>
                                 </div>
