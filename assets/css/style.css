@@ -867,4 +867,30 @@ button {
   font-size: 1.4rem;
 }
 
+.postnew-container {
+  padding: 32px 16px;
+  margin-top: 100px;
+  display: flex;
+  background-color: #ffffff;
+  height: 500px;
+}
+.postnew-container input {
+  width: 255px;
+}
+.postnew-container .postnew1 {
+  flex: 1;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+  font-size: 1.8rem;
+}
+.select-box .selected {
+  font-size: 1.4rem;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
