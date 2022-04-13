@@ -14,6 +14,7 @@
         }
     }
 }
+
 .select-box{
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
     gap: 30px 0;
     font-size: 1.8rem;
     .selected{
+        position: relative;
         font-size: 1.4rem;
         width: 96%;
         padding: 14px 12px;
@@ -29,7 +31,7 @@
     }
 }
 .select-box2{
-    display: none;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -50,9 +52,10 @@
     opacity: 0.3;
 }
 .option-container{
-    padding: 10px;
+    
+   
     width: 50%;
-    border: 1px solid red;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color:#ffffff;
     opacity: 1;
     position: relative;
@@ -61,4 +64,46 @@
     text-align: center;
     color: #222222;
 
+}
+.select-box2 .active{
+    display: none;
+}
+.selected::after{
+    content: "";
+    background: url("/assets/image/Arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    
+    position: absolute;
+    height: 100px;
+    width: 32px;
+    right: 10px;
+    transition: all 0.4s;
+
+}
+.option-header{
+    
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+.options{
+    padding: 20px;
+}
+.option{
+    
+    padding: 10px;
+    border: 1px solid #CACACA;
+    display: flex;
+    align-items: center;
+    img{
+        height: 28px;
+        width: 28px;
+    }
+    input{
+        display: none;
+    }
+    &:hover{
+        background-color: #CACACA;
+    }
 }

@@ -889,6 +889,7 @@ button {
   font-size: 1.8rem;
 }
 .select-box .selected {
+  position: relative;
   font-size: 1.4rem;
   width: 96%;
   padding: 14px 12px;
@@ -897,7 +898,6 @@ button {
 }
 
 .select-box2 {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -918,9 +918,8 @@ button {
 }
 
 .option-container {
-  padding: 10px;
   width: 50%;
-  border: 1px solid red;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffff;
   opacity: 1;
   position: relative;
@@ -928,6 +927,48 @@ button {
   transform: translateX(-50%);
   text-align: center;
   color: #222222;
+}
+
+.select-box2 .active {
+  display: none;
+}
+
+.selected::after {
+  content: "";
+  background: url("/assets/image/Arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100px;
+  width: 32px;
+  right: 10px;
+  transition: all 0.4s;
+}
+
+.option-header {
+  padding: 10px;
+  background-color: #F4F4F4;
+}
+
+.options {
+  padding: 20px;
+}
+
+.option {
+  padding: 10px;
+  border: 1px solid #CACACA;
+  display: flex;
+  align-items: center;
+}
+.option img {
+  height: 28px;
+  width: 28px;
+}
+.option input {
+  display: none;
+}
+.option:hover {
+  background-color: #CACACA;
 }
 
 /*# sourceMappingURL=style.css.map */
